@@ -32,6 +32,8 @@ if(isset($_POST['login'])){
         if ($validPassword){
 
             $_SESSION['user_id'] = $user['id'];
+            $_SESSION['type'] = $user['type'];
+            $_SESSION['login'] = $user['login'];
             $_SESSION['logged_in'] = time();
 
             if($user['type'] == 1){
