@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+2:400,700&display=swap&subset=latin-ext');
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+body{
+    background: #fefefe;
+    overflow-x: hidden;
+    font-family: 'Baloo 2', cursive;
+}
+
+header{
+    margin: 20px 0;
+    padding: 20px 0;
+    
+}
+.topLeft img{
+    width: 50vw;
+    grid-column: 1/6;
+}
+.topRight{
+    grid-column: 3/13;
+    align-self: center;
+    justify-self: center;
+}
+
+li{
+    list-style-type: none;  
+    display: inline;
+    margin: 20px;
+    font-size: 1.2em;
+    text-decoration: underline;
+}
+ul{
+    padding: 50px;
+    text-align: center;
+}
+ul a{
+    text-decoration: underline;
+    color: white;
+    font-weight: bold;
+}
+ul a:hover{
+    color: rgb(0, 34, 43);
+    transition: all .3s ease-in-out;
+}
+
+nav{
+    -webkit-box-shadow: inset 0px 51px 47px -53px rgba(0,0,0,0.75);
+-moz-box-shadow: inset 0px 51px 47px -53px rgba(0,0,0,0.75);
+box-shadow: inset 0px 51px 47px -53px rgba(0,0,0,0.75);
+}
+nav, main{
+    background: rgb(0, 131, 163);
+    font-size: 1.5em;
+    color: white;
+    padding: 20px;
+}
+
+footer{
+    margin-top: 20px;
+    text-align: center;
+}
+
+main{
+    text-align: center;
+}
+
+main h2{
+    margin: 20px;
+}
+input[type='submit']{
+    color: white;
+}
+input[type='submit']:hover{
+    background: rgb(0, 34, 43);
+    color: white;
+    border: 3px solid white;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+form{
+    padding: 20px;
+    width: 70vw;
+    border: 5px solid rgb(0, 34, 43);
+    border-radius: 15px;
+    margin-bottom: 50px;
+    font-size: 1.5em;
+    background: #fefefe;
+    color: black;
+    font-weight: bold;
+}
+form input{
+    width: 50%;
+    margin: 10px 0;
+    background: rgb(0, 131, 163);
+    padding: 10px 16px;
+    border-radius: 20px;
+    border: 3px solid rgb(0, 34, 43);
+    color: black;
+    font-size: 0.7em;
+}
+
+@media screen and (min-width: 1200px){
+    .topLeft img{
+        width: 25vw;
+    }
+    .topRight{
+        font-size: 1.7em;
+        letter-spacing: 2px;
+    }
+
+    form{
+    width: 30vw;
+    }
+    form input{
+        width: 50%;
+    }
+}
